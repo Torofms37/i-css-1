@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ec9838;
+  background-image: linear-gradient(to left top, #ec9838, #ff9360, #ff9790, #ffa3b6, #f0b3ce, #edbbcd, #e8c2cd, #e2cacf, #e5cfcb, #e3d6cc, #dfdcd1, #dde2d9);
+}
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+header h1 {
+  font-size: 3em;
+  margin: 0;
+  color: #c97616;
+}
+main {
+  display: flex;
+  width: 80%;
+  height: 60%;
+  border: 2px solid ghostwhite;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 200px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+  text-align: center;
+}
+.card:hover img {
+  transform: scale(1.1);
+}
+.card img {
+  width: 125px;
+  height: 125px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.card h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+.card p {
+  font-size: 1em;
+  color: #666;
+}
+.card:active {
+  background-color: #e0e0e0;
+}
+
+.bg-2{
+    background: linear-gradient(to right, rgb(221, 94, 137), rgb(247, 187, 151));
+  }
+.t-stroke-shadow {
+    color: #e8858e;
+    text-shadow: -3px 3px #ffffff, -3px -3px #ffffff, 3px -3px #ffffff, 3px 3px #f3f3f2, 6px 6px #6ac7c2;
+}
