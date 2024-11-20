@@ -9,7 +9,21 @@ body {
   justify-content: center;
   align-items: center;
   color: #ec9838;
-  background-image: linear-gradient(to left top, #ec9838, #ff9360, #ff9790, #ffa3b6, #f0b3ce, #edbbcd, #e8c2cd, #e2cacf, #e5cfcb, #e3d6cc, #dfdcd1, #dde2d9);
+  background-image: linear-gradient(
+    to left top,
+    #ec9838,
+    #ff9360,
+    #ff9790,
+    #ffa3b6,
+    #f0b3ce,
+    #edbbcd,
+    #e8c2cd,
+    #e2cacf,
+    #e5cfcb,
+    #e3d6cc,
+    #dfdcd1,
+    #dde2d9
+  );
 }
 header {
   text-align: center;
@@ -67,10 +81,37 @@ main {
   background-color: #e0e0e0;
 }
 
-.bg-2{
-    background: linear-gradient(to right, rgb(221, 94, 137), rgb(247, 187, 151));
-  }
+.bg-2 {
+  background: linear-gradient(to right, rgb(221, 94, 137), rgb(247, 187, 151));
+}
 .t-stroke-shadow {
-    color: #e8858e;
-    text-shadow: -3px 3px #ffffff, -3px -3px #ffffff, 3px -3px #ffffff, 3px 3px #f3f3f2, 6px 6px #6ac7c2;
+  color: #e8858e;
+  text-shadow: -3px 3px #ffffff, -3px -3px #ffffff, 3px -3px #ffffff,
+    3px 3px #f3f3f2, 6px 6px #6ac7c2;
+}
+
+.area {
+  width: 100%;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  font-size: 1.5em;
+  color: black;
+  letter-spacing: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: blur 0.75s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+@keyframes blur {
+  from {
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff,
+      0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff,
+      0px 0px 25px #fff, 0px 0px 50px #fff, 0px 0px 50px #fff,
+      0px 0px 50px #7b96b8, 0px 0px 150px #7b96b8, 0px 10px 100px #7b96b8,
+      0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8,
+      0px -10px 100px #7b96b8, 0px -10px 100px #7b96b8;
+  }
 }
