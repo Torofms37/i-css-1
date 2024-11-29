@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consistencia Interna y Estabilidad Temporal</title>
+    <style>
+        body {
+            background-color: #333;
+            color: #ccc;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #222;
+        }
+        header img {
+            height: 40px;
+        }
+        .menu-toggle {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            align-items: center;
+        }
+        .menu-toggle span {
+            background: #ccc;
+            width: 25px;
+            height: 2px;
+            margin: 3px 0;
+        }
+        nav {
+            display: none;
+            flex-direction: column;
+        }
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .left, .right {
+            background-color: #444;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .right {
+            text-align: center;
+        }
+        .right h2 {
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
+            color: #ccc;
+        }
+        footer a {
+            color: #ccc;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .chat-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #555;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        /* Media Queries for larger screens */
+        @media (min-width: 720px) {
+            nav {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+            }
+            .menu-toggle {
+                display: none;
+            }
+            .container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .left, .right {
+                width: 48%;
+                margin-bottom: 0;
+            }
+            .right {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="your-image.png" alt="Logo">
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="nav-menu">
+            <a href="#">INICIO</a>
+            <a href="#">PROYECTOS</a>
+            <a href="#">CONTACTO</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left">
+            <h2>Consistencia Interna</h2>
+            <p>Mide la coherencia entre ítems de una escala, asegurando que midan el mismo constructo.</p>
+        </div>
+        <div class="right">
+            <h2>Estabilidad Temporal</h2>
+            <p>Evalúa la consistencia de los puntajes en diferentes momentos, garantizando resultados fiables a lo largo del tiempo.</p>
+        </div>
+    </div>
+    <footer>
+        <a href="#">#etiquetas</a> - 
+        <a href="#">#etiquetas</a> - 
+        <a href="#">#etiquetas</a> - 
+        <a href="#">#etiquetas</a> - 
+        <a href="#">#etiquetas</a>
+    </footer>
+    <div class="chat-icon">
+        <img src="chat-icon.png" alt="Chat">
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('nav-menu');
+            if (navMenu.style.display === 'flex') {
+                navMenu.style.display = 'none';
+            } else {
+                navMenu.style.display = 'flex';
+            }
+        }
+    </script>
+</body>
+</html>
